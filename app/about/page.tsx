@@ -9,12 +9,12 @@ import Usage from "../components/pages/Usage";
 import { Slide } from "../animation/Slide";
 
 export const metadata: Metadata = {
-  title: "About | Victor Eke",
+  title: "About | Vivek Bhatt",
   metadataBase: new URL("https://victoreke.com/about"),
   description:
     "Learn more about my skills, experience and technical background",
   openGraph: {
-    title: "About | Victor Eke",
+    title: "About | Vivek bhatt",
     url: "https://victoreke.com/about",
     description:
       "Learn more about my skills, experience and technical background",
@@ -31,18 +31,16 @@ export default async function About() {
           <div className="order-2 lg:order-none">
             <Slide>
               <h1 className="font-incognito font-black tracking-tight sm:text-5xl text-3xl lg:leading-tight basis-1/2 mb-8">
-                I&apos;m Vivek Bhatt. I live in Uttarakhand, where I build the
-                future.
+                I&apos;m <span className="text-[#33e092]">Vivek Bhatt</span>. I
+                live in Uttarakhand, where I build the future.
               </h1>
 
               <div className="dark:text-zinc-400 text-zinc-600 leading-relaxed flex flex-col gap-y-4">
                 <p>
                   I am a self-driven, career-oriented software developer
-                  specializing in front-end development and open-source,
-                  currently pursuing a bachelors degree in computer science. My
-                  expertise lies in building interactive web applications on the
-                  client side. Primarily working with technologies like
-                  JavaScript, Next.js, TypeScript and Python.
+                  specializing in front-end development. My expertise lies in
+                  building interactive web applications. Primarily working with
+                  technologies like HTML, CSS, JavaScript, React and TypeScript.
                 </p>
                 <p>
                   I strongly believe in continuous learning and improving
@@ -50,9 +48,23 @@ export default async function About() {
                   unfavorable or not.
                 </p>
                 <p>
-                  I strongly believe in continuous learning and improving
-                  myself, so I try my best to learn in any situation possible,
-                  unfavorable or not.
+                  Beyond learning, I enjoy playing CSS Battle at{" "}
+                  <a
+                    href="https://cssbattle.dev/"
+                    className="underline hover:text-[#33e092]"
+                    target="_blank"
+                  >
+                    cssbattle.dev
+                  </a>{" "}
+                  and creating responsive layouts at{" "}
+                  <a
+                    href="http://frontendmentor.com/"
+                    className="underline hover:text-[#33e092]"
+                    target="_blank"
+                  >
+                    frontendmentor
+                  </a>
+                  .
                 </p>
               </div>
             </Slide>

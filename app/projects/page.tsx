@@ -13,13 +13,58 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Projects | Vivek Bhatt",
     url: "https://victoreke.com/projects",
-    description: "Explore projects built by Victor Eke",
+    description: "Explore projects built by Vivek Bhatt",
     images:
       "https://res.cloudinary.com/victoreke/image/upload/v1692636087/victoreke/projects.png",
   },
 };
 
 export default async function Project() {
+  const react = {
+    title: "React JS",
+    logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703591519/Avatar/icons8-react_qgatag.svg",
+  };
+
+  const javascript = {
+    title: "Javascript",
+    logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703598217/Avatar/icons8-javascript_v6h5rk.svg",
+  };
+
+  const tailwind = {
+    title: "Tailwind CSS",
+    logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703596180/Avatar/icons8-tailwind-css_unfxwf.svg",
+  };
+
+  const html = {
+    title: "HTML",
+    logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703598004/Avatar/icons8-html_o274vy.svg",
+  };
+
+  const css = {
+    title: "CSS",
+    logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703598122/Avatar/icons8-css_bf4ebu.svg",
+  };
+
+  const materialUI = {
+    title: "Material UI",
+    logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703598695/Avatar/material-ui_r2b3a5.svg",
+  };
+
+  const mongoose = {
+    title: "Mongoose",
+    logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703690944/Avatar/mongoose5_62x30_transparent_c5qurd.png",
+  };
+
+  const mongoDB = {
+    title: "Mongo DB",
+    logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703692035/Avatar/mdb_fj5pzu.webp",
+  };
+
+  const typescript = {
+    title: "Typescript",
+    logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703696793/Avatar/icons8-typescript-96_nrulsz.png",
+  };
+
   const projects = [
     {
       _id: "0",
@@ -30,6 +75,7 @@ export default async function Project() {
         liveLink: "https://taskify-theta-two.vercel.app/",
         githubLink: "https://github.com/vivekbhatt07/Taskify",
       },
+      techStack: [react, tailwind, typescript, materialUI, mongoose, mongoDB],
     },
     {
       _id: "2",
@@ -40,6 +86,7 @@ export default async function Project() {
         liveLink: "https://sociobee.netlify.app/",
         githubLink: "https://github.com/vivekbhatt07/sociobee",
       },
+      techStack: [react, tailwind, materialUI],
     },
     {
       _id: "3",
@@ -50,26 +97,29 @@ export default async function Project() {
         liveLink: "https://playverse.netlify.app/",
         githubLink: "https://github.com/vivekbhatt07/ecommerce",
       },
+      techStack: [css, react],
     },
     {
       _id: "4",
       name: "Jake & Elwood",
-      tagline: "Responsive website",
+      tagline: "Scrimba",
       logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703685694/Avatar/JK_vlolww.png",
       link: {
         liveLink: "https://jake-elwood.netlify.app/",
         githubLink: "https://github.com/vivekbhatt07/Jake-And-Elwood",
       },
+      techStack: [html, css],
     },
     {
       _id: "4",
       name: "Living the simple life",
-      tagline: "Responsive Homepage",
+      tagline: "Scrimba",
       logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703685924/Avatar/JK_1_eztpjz.png",
       link: {
         liveLink: "https://living-simple.netlify.app/",
         githubLink: "https://github.com/vivekbhatt07/Living-the-Simple-Life",
       },
+      techStack: [html, css],
     },
     {
       _id: "5",
@@ -80,6 +130,7 @@ export default async function Project() {
         liveLink: "https://bbqs.netlify.app/",
         githubLink: "https://github.com/vivekbhatt07/BBQ",
       },
+      techStack: [html, css],
     },
     {
       _id: "6",
@@ -90,6 +141,7 @@ export default async function Project() {
         liveLink: "https://play-tenzie.netlify.app/",
         githubLink: "https://github.com/vivekbhatt07/Tenzie",
       },
+      techStack: [html, css, react],
     },
     {
       _id: "7",
@@ -100,6 +152,7 @@ export default async function Project() {
         liveLink: "https://water-game.netlify.app/",
         githubLink: "https://github.com/vivekbhatt07/water-game",
       },
+      techStack: [html, css, javascript],
     },
     {
       _id: "8",
@@ -111,6 +164,7 @@ export default async function Project() {
         githubLink:
           "https://github.com/vivekbhatt07/Product-Preview-Card-Component",
       },
+      techStack: [html, css],
     },
     {
       _id: "9",
@@ -121,6 +175,7 @@ export default async function Project() {
         liveLink: "https://article-cards-component.netlify.app/",
         githubLink: "https://github.com/vivekbhatt07/Article-Preview-Component",
       },
+      techStack: [html, css],
     },
     {
       _id: "10",
@@ -131,6 +186,7 @@ export default async function Project() {
         liveLink: "https://grids-testimonial.netlify.app/",
         githubLink: "https://github.com/vivekbhatt07/Testimonial-Grid-Section",
       },
+      techStack: [html, css],
     },
     {
       _id: "11",
@@ -141,6 +197,7 @@ export default async function Project() {
         liveLink: "https://orders-component.netlify.app/",
         githubLink: "https://github.com/vivekbhatt07/Order-Summary-Component",
       },
+      techStack: [html, css],
     },
     {
       _id: "12",
@@ -151,6 +208,7 @@ export default async function Project() {
         liveLink: "https://tri-column-cards.netlify.app/",
         githubLink: "https://github.com/vivekbhatt07/FE-Mentor-Challenge-1",
       },
+      techStack: [html, css],
     },
     {
       _id: "13",
@@ -161,6 +219,7 @@ export default async function Project() {
         liveLink: "https://life-advice.netlify.app/",
         githubLink: "https://github.com/vivekbhatt07/Advice-Generator",
       },
+      techStack: [html, css, javascript],
     },
     {
       _id: "14",
@@ -171,6 +230,7 @@ export default async function Project() {
         liveLink: "https://qr-scan-card.netlify.app/",
         githubLink: "https://github.com/vivekbhatt07/QR-code-component",
       },
+      techStack: [html, css],
     },
     {
       _id: "15",
@@ -181,6 +241,7 @@ export default async function Project() {
         liveLink: "https://news-main.netlify.app/",
         githubLink: "https://github.com/vivekbhatt07/news-homepage",
       },
+      techStack: [html, css],
     },
     {
       _id: "16",
@@ -192,6 +253,7 @@ export default async function Project() {
         githubLink:
           "https://github.com/vivekbhatt07/Stats-preview-card-component",
       },
+      techStack: [html, css],
     },
     {
       _id: "17",
@@ -202,6 +264,7 @@ export default async function Project() {
         liveLink: "https://tip-divide.netlify.app/",
         githubLink: "https://github.com/vivekbhatt07/Tip-Calculator-App",
       },
+      techStack: [html, css, javascript],
     },
     {
       _id: "18",
@@ -213,6 +276,7 @@ export default async function Project() {
           "https://replit.com/@VivekBhatt2/Do-You-Know-Me?embed=1&output=1",
         githubLink: "https://github.com/vivekbhatt07/Do-You-Know-Me-",
       },
+      techStack: [javascript],
     },
     {
       _id: "19",
@@ -224,6 +288,7 @@ export default async function Project() {
           "https://replit.com/@VivekBhatt2/Marvel-Quiz?embed=1&output=1",
         githubLink: "https://github.com/vivekbhatt07/Marvel-Quiz",
       },
+      techStack: [javascript],
     },
     {
       _id: "20",
@@ -234,6 +299,7 @@ export default async function Project() {
         liveLink: "https://banana-mini-translate.netlify.app/",
         githubLink: "https://github.com/vivekbhatt07/Minion-Banana-speak",
       },
+      techStack: [html, css, javascript],
     },
     {
       _id: "21",
@@ -244,6 +310,7 @@ export default async function Project() {
         liveLink: "https://phineas.netlify.app/",
         githubLink: "https://github.com/vivekbhatt07/PHINEAS-AND-FERB",
       },
+      techStack: [html, css, javascript],
     },
     {
       _id: "22",
@@ -254,6 +321,7 @@ export default async function Project() {
         liveLink: "https://tip-divide.netlify.app/",
         githubLink: "https://github.com/vivekbhatt07/Tip-Calculator-App",
       },
+      techStack: [html, css, react],
     },
     {
       _id: "23",
@@ -264,6 +332,7 @@ export default async function Project() {
         liveLink: "https://csb-jkzldu.netlify.app/",
         githubLink: "https://github.com/vivekbhatt07/Movies",
       },
+      techStack: [html, css, react],
     },
     {
       _id: "24",
@@ -274,6 +343,7 @@ export default async function Project() {
         liveLink: "https://cash-manage-register.netlify.app/",
         githubLink: "https://github.com/vivekbhatt07/Cash-Register-Manager",
       },
+      techStack: [html, css, javascript],
     },
     {
       _id: "25",
@@ -284,6 +354,7 @@ export default async function Project() {
         liveLink: "https://birthdays-lucky.netlify.app/",
         githubLink: "https://github.com/vivekbhatt07/Birthday-Lucky",
       },
+      techStack: [html, css, javascript],
     },
     {
       _id: "26",
@@ -294,6 +365,7 @@ export default async function Project() {
         liveLink: "https://tri-angle-fun.netlify.app/",
         githubLink: "https://github.com/vivekbhatt07/Fun-With-Triangles",
       },
+      techStack: [html, css, javascript],
     },
     {
       _id: "27",
@@ -304,8 +376,10 @@ export default async function Project() {
         liveLink: "https://profits-loss.netlify.app/",
         githubLink: "https://github.com/vivekbhatt07/Profit-And-Loss",
       },
+      techStack: [html, css, javascript],
     },
   ];
+
   return (
     <main className="max-w-7xl mx-auto md:px-16 px-6">
       <header className="max-w-2xl mb-16">
@@ -331,7 +405,7 @@ export default async function Project() {
                 href={project.link.liveLink}
                 target="_blank"
                 key={project._id}
-                className="flex items-center gap-x-4 dark:bg-primary-bg bg-zinc-50 border border-transparent dark:hover:border-zinc-700 hover:border-zinc-200 p-4 rounded-lg justify-between"
+                className="flex items-center gap-y-4 flex-col dark:bg-primary-bg bg-zinc-50 border border-transparent dark:hover:border-zinc-700 hover:border-zinc-200 p-4 rounded-lg justify-between"
               >
                 <div className="flex gap-x-1 justify-between w-full">
                   <div className="flex gap-x-4 items-center">
@@ -351,16 +425,49 @@ export default async function Project() {
                       </p>
                     </div>
                   </div>
-
-                  <Link href={project.link.githubLink} target="_blank">
-                    <Image
-                      src="https://res.cloudinary.com/duqsyuriy/image/upload/v1703605987/Avatar/icons8-github-96_1_xxn8jj.png"
-                      width={60}
-                      height={60}
-                      alt={project.name}
-                      className="dark:bg-zinc-800 bg-zinc-100 rounded-md p-2 hover:dark:bg-zinc-950 hover:bg-zinc-200"
-                    />
-                  </Link>
+                  <div className="flex flex-col justify-between gap-y-1">
+                    <Link
+                      href={project.link.liveLink}
+                      target="_blank"
+                      title="Live Link"
+                    >
+                      <Image
+                        src="https://res.cloudinary.com/duqsyuriy/image/upload/v1703689094/Avatar/icons8-link-64_ldp5sh.png"
+                        width={30}
+                        height={30}
+                        alt={project.name}
+                        className="dark:bg-zinc-800 bg-zinc-100 rounded-md p-2 hover:dark:bg-zinc-950 hover:bg-zinc-200"
+                      />
+                    </Link>
+                    <Link
+                      href={project.link.githubLink}
+                      target="_blank"
+                      title="Github Link"
+                    >
+                      <Image
+                        src="https://res.cloudinary.com/duqsyuriy/image/upload/v1703605987/Avatar/icons8-github-96_1_xxn8jj.png"
+                        width={30}
+                        height={30}
+                        alt={project.name}
+                        className="dark:bg-zinc-800 bg-zinc-100 rounded-md p-2 hover:dark:bg-zinc-950 hover:bg-zinc-200"
+                      />
+                    </Link>
+                  </div>
+                </div>
+                <div className="flex flex-row gap-x-2 w-full">
+                  {project.techStack.map((tech) => {
+                    return (
+                      <Image
+                        src={tech.logo}
+                        width={40}
+                        height={40}
+                        alt={tech.title}
+                        className="dark:bg-zinc-800 bg-zinc-100 rounded-md p-2"
+                        key={tech.title}
+                        title={tech.title}
+                      />
+                    );
+                  })}
                 </div>
               </Link>
             ))}
