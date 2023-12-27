@@ -4,6 +4,7 @@ import { Metadata } from "next";
 import type { ProjectType } from "@/types";
 import EmptyState from "../components/shared/EmptyState";
 import { Slide } from "../animation/Slide";
+import { IconButton } from "@mui/material";
 
 export const metadata: Metadata = {
   title: "Project | Vivek Bhatt",
@@ -24,22 +25,285 @@ export default async function Project() {
       _id: "0",
       name: "Taskify",
       tagline: "A task management app",
-      slug: "/taskManagmentApp",
-      logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1687449309/Avatar/AvatarEleven_frqxrs.svg",
+      logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703684012/Avatar/icons8-task-100_gow9is.png",
+      link: {
+        liveLink: "https://taskify-theta-two.vercel.app/",
+        githubLink: "https://github.com/vivekbhatt07/Taskify",
+      },
     },
     {
       _id: "2",
       name: "Sociobee",
       tagline: "A social media app",
-      slug: "/sociobee",
       logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703489935/Avatar/icons8-social-100_fattlp.png",
+      link: {
+        liveLink: "https://sociobee.netlify.app/",
+        githubLink: "https://github.com/vivekbhatt07/sociobee",
+      },
     },
     {
       _id: "3",
       name: "Playverse",
       tagline: "An ecommerce app",
-      slug: "/playverse",
       logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703488647/Avatar/icons8-game-100_eoccid.png",
+      link: {
+        liveLink: "https://playverse.netlify.app/",
+        githubLink: "https://github.com/vivekbhatt07/ecommerce",
+      },
+    },
+    {
+      _id: "4",
+      name: "Jake & Elwood",
+      tagline: "Responsive website",
+      logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703685694/Avatar/JK_vlolww.png",
+      link: {
+        liveLink: "https://jake-elwood.netlify.app/",
+        githubLink: "https://github.com/vivekbhatt07/Jake-And-Elwood",
+      },
+    },
+    {
+      _id: "4",
+      name: "Living the simple life",
+      tagline: "Responsive Homepage",
+      logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703685924/Avatar/JK_1_eztpjz.png",
+      link: {
+        liveLink: "https://living-simple.netlify.app/",
+        githubLink: "https://github.com/vivekbhatt07/Living-the-Simple-Life",
+      },
+    },
+    {
+      _id: "5",
+      name: "BBQ Master",
+      tagline: "Responsive LoginPage",
+      logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703678077/Avatar/icons8-bbq-96_woipdb.png",
+      link: {
+        liveLink: "https://bbqs.netlify.app/",
+        githubLink: "https://github.com/vivekbhatt07/BBQ",
+      },
+    },
+    {
+      _id: "6",
+      name: "Tenzi",
+      tagline: "Roll until all dice are the same",
+      logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703677805/Avatar/icons8-dice-96_puqsjc.png",
+      link: {
+        liveLink: "https://play-tenzie.netlify.app/",
+        githubLink: "https://github.com/vivekbhatt07/Tenzie",
+      },
+    },
+    {
+      _id: "7",
+      name: "Drink Water",
+      tagline: "Responsive LoginPage",
+      logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703675852/Avatar/icons8-sparkling-water-100_h4qiys.png",
+      link: {
+        liveLink: "https://water-game.netlify.app/",
+        githubLink: "https://github.com/vivekbhatt07/water-game",
+      },
+    },
+    {
+      _id: "8",
+      name: "Product Preview Card",
+      tagline: "Frontend Mentor Challenge",
+      logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703686794/Avatar/icons8-question-100_qihhd3.png",
+      link: {
+        liveLink: "https://brand-card-preview.netlify.app/",
+        githubLink:
+          "https://github.com/vivekbhatt07/Product-Preview-Card-Component",
+      },
+    },
+    {
+      _id: "9",
+      name: "Article Preview Card",
+      tagline: "Frontend Mentor Challenge",
+      logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703686794/Avatar/icons8-question-100_qihhd3.png",
+      link: {
+        liveLink: "https://article-cards-component.netlify.app/",
+        githubLink: "https://github.com/vivekbhatt07/Article-Preview-Component",
+      },
+    },
+    {
+      _id: "10",
+      name: "Testimonial Grid Section",
+      tagline: "Frontend Mentor Challenge",
+      logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703676897/Avatar/icons8-testimonial-64_ykskkd.png",
+      link: {
+        liveLink: "https://grids-testimonial.netlify.app/",
+        githubLink: "https://github.com/vivekbhatt07/Testimonial-Grid-Section",
+      },
+    },
+    {
+      _id: "11",
+      name: "Order Summary Component",
+      tagline: "Frontend Mentor Challenge",
+      logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703678362/Avatar/icons8-order-64_bxrbmo.png",
+      link: {
+        liveLink: "https://orders-component.netlify.app/",
+        githubLink: "https://github.com/vivekbhatt07/Order-Summary-Component",
+      },
+    },
+    {
+      _id: "12",
+      name: "Tri Column Card",
+      tagline: "Frontend Mentor Challenge",
+      logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703684238/Avatar/icons8-select-middle-column-100_e1nnb5.png",
+      link: {
+        liveLink: "https://tri-column-cards.netlify.app/",
+        githubLink: "https://github.com/vivekbhatt07/FE-Mentor-Challenge-1",
+      },
+    },
+    {
+      _id: "13",
+      name: "Advice Generator",
+      tagline: "Frontend Mentor Challenge",
+      logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703677323/Avatar/icons8-advice-64_nf4qpr.png",
+      link: {
+        liveLink: "https://life-advice.netlify.app/",
+        githubLink: "https://github.com/vivekbhatt07/Advice-Generator",
+      },
+    },
+    {
+      _id: "14",
+      name: "QR Code Component",
+      tagline: "Frontend Mentor Challenge",
+      logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703676428/Avatar/icons8-qr-96_zsx1hv.png",
+      link: {
+        liveLink: "https://qr-scan-card.netlify.app/",
+        githubLink: "https://github.com/vivekbhatt07/QR-code-component",
+      },
+    },
+    {
+      _id: "15",
+      name: "News Homepage",
+      tagline: "Frontend Mentor Challenge",
+      logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703676716/Avatar/icons8-news-96_igixl4.png",
+      link: {
+        liveLink: "https://news-main.netlify.app/",
+        githubLink: "https://github.com/vivekbhatt07/news-homepage",
+      },
+    },
+    {
+      _id: "16",
+      name: "Stats Preview Card",
+      tagline: "Frontend Mentor Challenge",
+      logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703684985/Avatar/icons8-stats-100_p6b23a.png",
+      link: {
+        liveLink: "https://stats-card-view.netlify.app/",
+        githubLink:
+          "https://github.com/vivekbhatt07/Stats-preview-card-component",
+      },
+    },
+    {
+      _id: "17",
+      name: "Tip Calculator App",
+      tagline: "Frontend Mentor Challenge",
+      logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703675632/Avatar/icons8-calculator-100_vb4ss2.png",
+      link: {
+        liveLink: "https://tip-divide.netlify.app/",
+        githubLink: "https://github.com/vivekbhatt07/Tip-Calculator-App",
+      },
+    },
+    {
+      _id: "18",
+      name: "CLI Quiz App (Do You Know Me?)",
+      tagline: "NEOG Level 0",
+      logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703675427/Avatar/icons8-quiz-96_ihchyc.png",
+      link: {
+        liveLink:
+          "https://replit.com/@VivekBhatt2/Do-You-Know-Me?embed=1&output=1",
+        githubLink: "https://github.com/vivekbhatt07/Do-You-Know-Me-",
+      },
+    },
+    {
+      _id: "19",
+      name: "CLI Quiz App (Do You Marvel?)",
+      tagline: "NEOG Level 0",
+      logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703675427/Avatar/icons8-quiz-96_ihchyc.png",
+      link: {
+        liveLink:
+          "https://replit.com/@VivekBhatt2/Marvel-Quiz?embed=1&output=1",
+        githubLink: "https://github.com/vivekbhatt07/Marvel-Quiz",
+      },
+    },
+    {
+      _id: "20",
+      name: "Banana Translator App",
+      tagline: "NEOG Level 0",
+      logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703675265/Avatar/icons8-translate-96_ftujcw.png",
+      link: {
+        liveLink: "https://banana-mini-translate.netlify.app/",
+        githubLink: "https://github.com/vivekbhatt07/Minion-Banana-speak",
+      },
+    },
+    {
+      _id: "21",
+      name: "Ferb Translator App",
+      tagline: "NEOG Level 0",
+      logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703675265/Avatar/icons8-translate-96_ftujcw.png",
+      link: {
+        liveLink: "https://phineas.netlify.app/",
+        githubLink: "https://github.com/vivekbhatt07/PHINEAS-AND-FERB",
+      },
+    },
+    {
+      _id: "22",
+      name: "Flag Identifier",
+      tagline: "NEOG Level 0",
+      logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703674847/Avatar/icons8-indian-flag-64_z2dt51.png",
+      link: {
+        liveLink: "https://tip-divide.netlify.app/",
+        githubLink: "https://github.com/vivekbhatt07/Tip-Calculator-App",
+      },
+    },
+    {
+      _id: "23",
+      name: "Movie Recommendation",
+      tagline: "NEOG Level 0",
+      logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703674055/Avatar/icons8-movie-64_jhyejl.png",
+      link: {
+        liveLink: "https://csb-jkzldu.netlify.app/",
+        githubLink: "https://github.com/vivekbhatt07/Movies",
+      },
+    },
+    {
+      _id: "24",
+      name: "Cash Register Manager",
+      tagline: "NEOG Level 0",
+      logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703673789/Avatar/icons8-cash-register-64_neydjj.png",
+      link: {
+        liveLink: "https://cash-manage-register.netlify.app/",
+        githubLink: "https://github.com/vivekbhatt07/Cash-Register-Manager",
+      },
+    },
+    {
+      _id: "25",
+      name: "Lucky Birthday",
+      tagline: "NEOG Level 0",
+      logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703673616/Avatar/icons8-birthday-100_js0o7c.png",
+      link: {
+        liveLink: "https://birthdays-lucky.netlify.app/",
+        githubLink: "https://github.com/vivekbhatt07/Birthday-Lucky",
+      },
+    },
+    {
+      _id: "26",
+      name: "Fun With Triangles",
+      tagline: "NEOG Level 0",
+      logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703673462/Avatar/icons8-three-triangles-64_qb75yj.png",
+      link: {
+        liveLink: "https://tri-angle-fun.netlify.app/",
+        githubLink: "https://github.com/vivekbhatt07/Fun-With-Triangles",
+      },
+    },
+    {
+      _id: "27",
+      name: "Profit & Loss App",
+      tagline: "NEOG Level 0",
+      logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703673282/Avatar/icons8-profit-80_fdxyoq.png",
+      link: {
+        liveLink: "https://profits-loss.netlify.app/",
+        githubLink: "https://github.com/vivekbhatt07/Profit-And-Loss",
+      },
     },
   ];
   return (
@@ -64,22 +328,39 @@ export default async function Project() {
           <section className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 mb-12">
             {projects.map((project) => (
               <Link
-                href={`/projects/${project.slug}`}
+                href={project.link.liveLink}
+                target="_blank"
                 key={project._id}
-                className="flex items-center gap-x-4 dark:bg-primary-bg bg-zinc-50 border border-transparent dark:hover:border-zinc-700 hover:border-zinc-200 p-4 rounded-lg"
+                className="flex items-center gap-x-4 dark:bg-primary-bg bg-zinc-50 border border-transparent dark:hover:border-zinc-700 hover:border-zinc-200 p-4 rounded-lg justify-between"
               >
-                <Image
-                  src={project.logo}
-                  width={60}
-                  height={60}
-                  alt={project.name}
-                  className="dark:bg-zinc-800 bg-zinc-100 rounded-md p-2"
-                />
-                <div>
-                  <h2 className="text-lg tracking-wide mb-1">{project.name}</h2>
-                  <div className="text-sm dark:text-zinc-400 text-zinc-600">
-                    {project.tagline}
+                <div className="flex gap-x-1 justify-between w-full">
+                  <div className="flex gap-x-4 items-center">
+                    <Image
+                      src={project.logo}
+                      width={60}
+                      height={60}
+                      alt={project.name}
+                      className="dark:bg-zinc-800 bg-zinc-100 rounded-md p-2"
+                    />
+                    <div>
+                      <h2 className="text-sm tracking-wide mb-1">
+                        {project.name}
+                      </h2>
+                      <p className="text-xs dark:text-zinc-400 text-zinc-600">
+                        {project.tagline}
+                      </p>
+                    </div>
                   </div>
+
+                  <Link href={project.link.githubLink} target="_blank">
+                    <Image
+                      src="https://res.cloudinary.com/duqsyuriy/image/upload/v1703605987/Avatar/icons8-github-96_1_xxn8jj.png"
+                      width={60}
+                      height={60}
+                      alt={project.name}
+                      className="dark:bg-zinc-800 bg-zinc-100 rounded-md p-2 hover:dark:bg-zinc-950 hover:bg-zinc-200"
+                    />
+                  </Link>
                 </div>
               </Link>
             ))}
