@@ -6,14 +6,13 @@ import { Slide } from "../animation/Slide";
 
 export const metadata: Metadata = {
   title: "Blog | Vivek Bhatt",
-  metadataBase: new URL("https://victoreke.com/blog"),
+  metadataBase: new URL("https://vivekbhatt.vercel.app/blog"),
   description: "Read latest stories from Vivek Bhatt's Blog",
   openGraph: {
     title: "Blog | Vivek Bhatt",
-    url: "https://victoreke.com/blog",
+    url: "https://vivekbhatt.vercel.app/blog",
     description: "Read latest stories from Vivek Bhatt's Blog",
-    images:
-      "https://res.cloudinary.com/victoreke/image/upload/v1692636087/victoreke/blog.png",
+    images: "",
   },
 };
 

@@ -18,9 +18,8 @@ const options = {
   title: "Vivek Bhatt | Software Developer",
   description:
     "Vivek Bhatt is a Software Developer who is passionate about building Web App",
-  url: "https://victoreke.com",
-  ogImage:
-    "https://res.cloudinary.com/victoreke/image/upload/v1692635746/victoreke/og.png",
+  url: "https://vivekbhatt.vercel.app/",
+  ogImage: "",
 };
 
 export const metadata: Metadata = {
@@ -30,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: options.title,
     url: options.url,
-    siteName: "victoreke.com",
+    siteName: "https://vivekbhatt.vercel.app/",
     locale: "en-US",
     type: "website",
     description: options.description,

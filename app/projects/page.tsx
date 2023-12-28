@@ -1,21 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
-import type { ProjectType } from "@/types";
 import EmptyState from "../components/shared/EmptyState";
 import { Slide } from "../animation/Slide";
-import { IconButton } from "@mui/material";
 
 export const metadata: Metadata = {
   title: "Project | Vivek Bhatt",
-  metadataBase: new URL("https://victoreke.com/projects"),
+  metadataBase: new URL("https://vivekbhatt.vercel.app/projects"),
   description: "Explore projects built by Vivek Bhatt",
   openGraph: {
     title: "Projects | Vivek Bhatt",
-    url: "https://victoreke.com/projects",
+    url: "https://vivekbhatt.vercel.app/projects",
     description: "Explore projects built by Vivek Bhatt",
-    images:
-      "https://res.cloudinary.com/victoreke/image/upload/v1692636087/victoreke/projects.png",
+    images: "",
   },
 };
 

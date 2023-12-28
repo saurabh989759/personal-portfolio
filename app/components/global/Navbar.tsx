@@ -27,7 +27,13 @@ export default function Navbar() {
       <header className="text-sm py-6 md:px-16 px-6 border-b dark:border-zinc-800 border-zinc-200 z-30 md:mb-28 mb-10">
         <div className="max-w-6xl mx-auto flex items-center justify-between">
           <Link href="/">
-            <Image src={Logo} width={35} height={35} alt="logo" />
+            <Image
+              src={Logo}
+              width={35}
+              height={35}
+              alt="logo"
+              className="rounded-lg"
+            />
           </Link>
 
           <nav className="md:block hidden">
