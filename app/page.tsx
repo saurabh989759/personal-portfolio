@@ -13,8 +13,8 @@ export default async function Home() {
               <span className="text-[#33e092]">Frontend</span> Developer
             </h1>
             <p className="text-base dark:text-zinc-400 text-zinc-600 leading-relaxed">
-              I'm Vivek Bhatt, frontend developer with expertise in HTML, CSS,
-              Javascript and React JS.
+              I&apos;m Vivek Bhatt, frontend developer with expertise in HTML,
+              CSS, Javascript and React JS.
             </p>
           </Slide>
           <Slide delay={0.1}>
