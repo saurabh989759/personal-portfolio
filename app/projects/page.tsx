@@ -71,7 +71,7 @@ export default async function Project() {
     {
       _id: "0",
       name: "Tealbox Digital",
-      tagline: "Freelance Project",
+      tagline: "Freelance Project (Webflow)",
       logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703522180/Avatar/6335a708a702cd1dd5f9f4db_Tealbox_Transparent-p-500_vxlxzb.png",
       link: {
         liveLink: "https://www.tealbox.digital/",
