@@ -1,9 +1,6 @@
 import Image from "next/image";
 import { Metadata } from "next";
-import type { ProfileType } from "@/types";
-import { PortableText } from "@portabletext/react";
 import { BiEnvelope, BiLinkExternal, BiSolidDownload } from "react-icons/bi";
-import { CustomPortableText } from "../components/shared/CustomPortableText";
 import Heroes from "../components/pages/Heroes";
 import Usage from "../components/pages/Usage";
 import { Slide } from "../animation/Slide";

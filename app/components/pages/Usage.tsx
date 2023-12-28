@@ -1,8 +1,4 @@
-import { PortableText } from "@portabletext/react";
-
-import type { ProfileType } from "@/types";
 import Image from "next/image";
-import { CustomPortableTextFavicon } from "../shared/CustomPortableTextFavicon";
 import Link from "next/link";
 
 export default async function Usage() {
@@ -13,19 +9,20 @@ export default async function Usage() {
         {
           title: "HTML",
           subtitle: "Markup",
-          reach: "https://react.dev/",
+          reach: "https://www.w3.org/TR/html401/",
           logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703598004/Avatar/icons8-html_o274vy.svg",
         },
         {
           title: "CSS",
           subtitle: "style",
-          reach: "https://react.dev/",
+          reach: "https://www.w3.org/Style/CSS/Overview.en.html",
           logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703598122/Avatar/icons8-css_bf4ebu.svg",
         },
         {
           title: "Javascript",
           subtitle: "Javascript Language",
-          reach: "https://react.dev/",
+          reach:
+            "https://ecma-international.org/publications-and-standards/standards/ecma-262/",
           logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703598217/Avatar/icons8-javascript_v6h5rk.svg",
         },
         {
@@ -43,8 +40,14 @@ export default async function Usage() {
         {
           title: "Material UI",
           subtitle: "Component Library",
-          reach: "https://tailwindcss.com/",
+          reach: "https://mui.com/material-ui/",
           logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703598695/Avatar/material-ui_r2b3a5.svg",
+        },
+        {
+          title: "Typescript",
+          subtitle: "Typecheck",
+          reach: "https://www.typescriptlang.org/",
+          logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703696793/Avatar/icons8-typescript-96_nrulsz.png",
         },
       ],
     },
@@ -54,25 +57,26 @@ export default async function Usage() {
         {
           title: "Visual Studio Code",
           subtitle: "Text Editor",
-          reach: "https://tailwindcss.com/",
+          reach: "https://code.visualstudio.com/",
           logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703597668/Avatar/icons8-vs-code_oge6cl.svg",
         },
         {
           title: "Firefox",
           subtitle: "Web Browser",
-          reach: "https://tailwindcss.com/",
+          reach: "https://www.mozilla.org/en-US/firefox/new/",
           logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703597577/Avatar/icons8-firefox-96_pxrtpr.png",
         },
         {
           title: "Chrome",
           subtitle: "Web Browser",
-          reach: "https://tailwindcss.com/",
+          reach:
+            "https://www.google.com/chrome/?brand=FHFK&gclid=EAIaIQobChMIuaqnmfexgwMVdc5MAh1MAwd-EAAYASAAEgKA0PD_BwE&gclsrc=aw.ds",
           logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703597377/Avatar/icons8-chrome_xdju2s.svg",
         },
         {
           title: "Youtube Music",
           subtitle: "Music Streaming",
-          reach: "https://tailwindcss.com/",
+          reach: "https://music.youtube.com/",
           logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703597160/Avatar/icons8-youtube-music_wzryyb.svg",
         },
       ],
@@ -118,6 +122,7 @@ export default async function Usage() {
                         <div className="flex gap-x-2 items-center">
                           <Link
                             href={subItem.reach}
+                            target="_blank"
                             className="text-black dark:text-white hover:text-[#10b981] underline transition-all"
                           >
                             {subItem.title}

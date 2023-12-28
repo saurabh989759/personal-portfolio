@@ -15,9 +15,9 @@ const inter = Inter({
 });
 
 const options = {
-  title: "Victor Eke | Software Developer",
+  title: "Vivek Bhatt | Software Developer",
   description:
-    "Victor Eke is a Software Developer and Technical Writer who is passionate about building solutions and contributing to open source communities",
+    "Vivek Bhatt is a Software Developer who is passionate about building Web App",
   url: "https://victoreke.com",
   ogImage:
     "https://res.cloudinary.com/victoreke/image/upload/v1692635746/victoreke/og.png",
