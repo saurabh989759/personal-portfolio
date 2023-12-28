@@ -26,6 +26,12 @@ export default async function Usage() {
           logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703598217/Avatar/icons8-javascript_v6h5rk.svg",
         },
         {
+          title: "Webflow",
+          subtitle: "No Code Platform",
+          reach: "https://webflow.com/",
+          logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703778226/Avatar/62c41f5069b0da78165bc21f_rr4814.png",
+        },
+        {
           title: "React",
           subtitle: "UI Library",
           reach: "https://react.dev/",

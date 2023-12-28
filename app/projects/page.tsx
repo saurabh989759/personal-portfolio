@@ -62,9 +62,25 @@ export default async function Project() {
     logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703696793/Avatar/icons8-typescript-96_nrulsz.png",
   };
 
+  const webflow = {
+    title: "Webflow",
+    logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703778226/Avatar/62c41f5069b0da78165bc21f_rr4814.png",
+  };
+
   const projects = [
     {
       _id: "0",
+      name: "Tealbox Digital",
+      tagline: "Freelance Project",
+      logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703522180/Avatar/6335a708a702cd1dd5f9f4db_Tealbox_Transparent-p-500_vxlxzb.png",
+      link: {
+        liveLink: "https://www.tealbox.digital/",
+        githubLink: "",
+      },
+      techStack: [webflow],
+    },
+    {
+      _id: "1",
       name: "Taskify",
       tagline: "A task management app",
       logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703684012/Avatar/icons8-task-100_gow9is.png",
@@ -436,19 +452,21 @@ export default async function Project() {
                         className="dark:bg-zinc-800 bg-zinc-100 rounded-md p-2 hover:dark:bg-zinc-950 hover:bg-zinc-200"
                       />
                     </Link>
-                    <Link
-                      href={project.link.githubLink}
-                      target="_blank"
-                      title="Github Link"
-                    >
-                      <Image
-                        src="https://res.cloudinary.com/duqsyuriy/image/upload/v1703605987/Avatar/icons8-github-96_1_xxn8jj.png"
-                        width={30}
-                        height={30}
-                        alt={project.name}
-                        className="dark:bg-zinc-800 bg-zinc-100 rounded-md p-2 hover:dark:bg-zinc-950 hover:bg-zinc-200"
-                      />
-                    </Link>
+                    {project.link.githubLink && (
+                      <Link
+                        href={project.link.githubLink}
+                        target="_blank"
+                        title="Github Link"
+                      >
+                        <Image
+                          src="https://res.cloudinary.com/duqsyuriy/image/upload/v1703605987/Avatar/icons8-github-96_1_xxn8jj.png"
+                          width={30}
+                          height={30}
+                          alt={project.name}
+                          className="dark:bg-zinc-800 bg-zinc-100 rounded-md p-2 hover:dark:bg-zinc-950 hover:bg-zinc-200"
+                        />
+                      </Link>
+                    )}
                   </div>
                 </div>
                 <div className="flex flex-row gap-x-2 w-full">
