@@ -1,6 +1,4 @@
 import Image from "next/image";
-
-import type { JobType } from "@/types";
 import { formatDate } from "../../utils/date";
 import { Slide } from "../../animation/Slide";
 
@@ -74,7 +72,7 @@ export default async function Job() {
                 <h3 className="text-xl font-bold">{data.name}</h3>
                 <p>{data.jobTitle}</p>
                 <time className="text-sm text-zinc-500 mt-2 tracking-widest uppercase">
-                  {formatDate(data.startDate)} -{" "}
+                  {formatDate(data.startDate)} -
                   {data.endDate ? (
                     formatDate(data.endDate)
                   ) : (
