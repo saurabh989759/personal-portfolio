@@ -325,17 +325,17 @@ export default async function Project() {
       },
       techStack: [html, css, javascript],
     },
-    {
-      _id: "22",
-      name: "Flag Identifier",
-      tagline: "NEOG Level 0",
-      logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703674847/Avatar/icons8-indian-flag-64_z2dt51.png",
-      link: {
-        liveLink: "https://tip-divide.netlify.app/",
-        githubLink: "https://github.com/vivekbhatt07/Tip-Calculator-App",
-      },
-      techStack: [html, css, react],
-    },
+    // {
+    //   _id: "22",
+    //   name: "Flag Identifier",
+    //   tagline: "NEOG Level 0",
+    //   logo: "https://res.cloudinary.com/duqsyuriy/image/upload/v1703674847/Avatar/icons8-indian-flag-64_z2dt51.png",
+    //   link: {
+    //     liveLink: "https://tip-divide.netlify.app/",
+    //     githubLink: "https://github.com/vivekbhatt07/Tip-Calculator-App",
+    //   },
+    //   techStack: [html, css, react],
+    // },
     {
       _id: "23",
       name: "Movie Recommendation",
